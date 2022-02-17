@@ -14,7 +14,7 @@ import logo from "./assets/logo.png";
 
 function App() {
   const data = {
-    home:{
+    home: {
       appType: 'Ghost Byte',
       tagLine: 'FILECOIN STORAGE PROVIDER',
       description: 'Providing fast, secure, redundant data storage for our most valuable clients.',
@@ -32,31 +32,31 @@ function App() {
   return (
     // __________________________TODO: ____________________
     // Add Poppins font to everything (body)
-    
-    <div className="box-border">
+
+    <div className="box-border ">
       <div className="flex flex-col">
-        
-        <Navbar logo={logo}/>
-        <Home 
+
+        <Navbar logo={logo} />
+        <Home
           appType={data.home.appType}
           tagLine={data.home.tagLine}
           description={data.home.description}
           mainActionText={data.home.mainActionText}
         />
-        
+
         <div id="priorities" className="pt-20 pb-12 text-priorities uppercase font-body text-center text-white lg:font-bold bg-bgsecondary">PRIORITIES </div>
-        <Priorities/>
+        <Priorities />
 
         <div id="clients" className="pt-20 pb-12 text-priorities uppercase font-body text-center text-white lg:font-bold bg-bgprimary">CLIENTS </div>
-        <Clients/>
+        <Clients />
 
         <div id="investors" className="pt-20 pb-12 text-priorities uppercase font-body text-center text-white lg:font-bold bg-bgsecondary">INVESTORS </div>
         <Investors />
-       
-        <div id="partners" className="pt-20 pb-12 text-priorities uppercase font-body text-center text-white lg:font-bold bg-bgprimary">PARTNERS</div>
-        <Partners/>
 
-        <Contact 
+        <div id="partners" className="pt-20 pb-12 text-priorities uppercase font-body text-center text-white lg:font-bold bg-bgprimary">PARTNERS</div>
+        <Partners />
+
+        <Contact
           actionText={data.contact.actionText}
           email={data.contact.email}
           phone={data.contact.phone}
@@ -65,7 +65,7 @@ function App() {
           extraActionText={data.contact.extraActionText}
         />
 
-        <Footer logo={logo}/>
+        <Footer logo={logo} />
       </div>
     </div>
   );

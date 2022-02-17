@@ -23,7 +23,9 @@ module.exports = {
       screens: {
         'sm': '300px',
         'md': '700px',
-        'lg': '1024px'
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px'
         },
       fontFamily: {
         'sans': ['ui-sans-serif', 'system-ui'],
